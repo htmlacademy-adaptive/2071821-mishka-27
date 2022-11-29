@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <base href="https://htmlacademy-adaptive.github.io/2071821-mishka-27/2/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <h1 class="main-header__title">Каталог товаров</h1>
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Логотип магазина товаров ручной работы «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <h2 class="visually-hidden">Каталог изделий.</h2>
+        <ul class="catalog__list product-cards">
+          <li class="product-cards__item">
+            <a class="product-cards__link" href="product.html">
+              <img class="product-cards__image" src="#" width="260" height="195" alt="Вязаный зайчик.">
+              <h3 class="product-cards__title">Зайчик-попрыгайчик</h3>
+            </a>
+            <span class="product-cards__description">Рост 30 см, вес 200 г</span>
+            <b class="product-cards__price">690 руб.</b>
+            <a class="product-cards__button" href="#">В корзину</a>
+          </li>
+
+          <li class="product-cards__item">
+            <a class="product-cards__link" href="product.html">
+              <img class="product-cards__image" src="#" width="260" height="195" alt="Вязаная двухцветная корзинка для белья.">
+              <h3 class="product-cards__title">Диаметр 15 см, высота 10 см</h3>
+            </a>
+            <span class="product-cards__description">Рост 30 см, вес 200 г</span>
+            <b class="product-cards__price">1 500 руб.</b>
+            <a class="product-cards__button" href="#">В корзину</a>
+          </li>
+
+          <li class="product-cards__item">
+            <a class="product-cards__link" href="product.html">
+              <img class="product-cards__image" src="#" width="260" height="195" alt="Вязаная большая корзинка с игрушками.">
+              <h3 class="product-cards__title">Большая корзинка для игрушек</h3>
+            </a>
+            <span class="product-cards__description">Диаметр 30 см, высота 30 см</span>
+            <b class="product-cards__price">1 200 руб.</b>
+            <a class="product-cards__button" href="#">В корзину</a>
+          </li>
+
+      </div>
+
+
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <video class="video__content"></video>
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video__button" href="#">Сделать заказ</a>
+        </div>
+      </section>
+
+      <section class="modal">
+        <div class="modal__container modal__container--close">
+          <h2 class="modal__title">Добавить в корзину</h2>
+
+          <form class="modal__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">Выберете размер:</legend>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <label class="filter-form__control control">
+                  <input class="control__input visually-hidden " type="radio" name="size" value="small" checked>
+
+              S
+                </label>
+              </li>
+
+                <li class="filter-form__item">
+                  <label class="filter-form__control control">
+                    <input class="control__input visually-hidden " type="radio" name="size" value="medium">
+
+                M
+                  </label>
+                </li>
+
+                <li class="filter-form__item">
+                  <label class="filter-form__control control">
+                    <input class="control__input visually-hidden " type="radio" name="size" value="large">
+
+                L
+                  </label>
+                </li>
+            </ul>
+          </fieldset>
+
+            <button class="button filter-form__button" type="submit">Добавить</button>
+          </form>
+      </section>
+
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" width="27" height="34" src="" alt="Логотип htmlacademy">
+          </a>
+        </div>
+
+        </div>
+      </div>
+
+
+    </footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <base href="https://htmlacademy-adaptive.github.io/2071821-mishka-27/2/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <h1 class="main-header__title">Каталог товаров</h1>
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" width="86" height="35" alt="Логотип магазина товаров ручной работы «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Форма заказа</h1>
+
+    <section class="form">
+      <div class="form__container">
+        <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="order-form__group">
+            <legend class="order-form__title">Тип</legend>
+            <ul class="order-form__list">
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="radio" name="type" value="interior" checked>
+                  <span class="control-circle"></span>
+                  Аксессуар для интерьера
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="radio" name="type" value="toy">
+                  <span class="control-circle"></span>
+                  Детская игрушка
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__title">Цвет</legend>
+            <ul class="order-form__list">
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="white" checked>
+                  <span class="control-mark"></span>
+                  Белый
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="gray" checked>
+                  <span class="control-mark"></span>
+                  Серый
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="tiffany">
+                  <span class="control-mark"></span>
+                  Тиффани
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="black">
+                  <span class="control-mark"></span>
+                  Черный
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="pinc">
+                  <span class="control-mark"></span>
+                  Розовый
+                </label>
+              </li>
+              <li class="order-form__item">
+                <label class="order-form__control control">
+                  <input class="control__input" type="checkbox" name="orange">
+                  <span class="control-mark"></span>
+                  Оранжевый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__title">ФИО</legend>
+            <label class="order-form__label" >
+              Имя:<input class="order-form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label >
+              Фамилия:<input class="order-form__input" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+            </label>
+            <label >
+              Отчество:<input class="order-form__input" type="text" name="patronymic-name" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+
+          <label>Тел
+            <input class="order-form__input" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </label>
+
+          <label>E-mail
+            <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*" required>
+          </label>
+
+          <label>Доп
+            <textarea class="order-form__textarea" name="textarea" rows="6" cols="25" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+
+          <p class="order-form__explanation" >*Поля обязательны для заполнения</p>
+          <button class="order-form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" width="27" height="34" src="" alt="Логотип htmlacademy">
+          </a>
+        </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
