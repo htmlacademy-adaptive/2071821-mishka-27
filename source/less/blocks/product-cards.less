@@ -1,0 +1,36 @@
+.product-cards {
+  display: grid;
+}
+
+.product-cards__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-cards__link{
+  grid-column: -1/1;
+}
+
+.product-cards__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: @black;
+  text-align: left;
+}
+
+.product-cards__description {
+  grid-column: -1/1;
+  font-size: 13px;
+  line-height: 30px;
+  color: @gray;
+  text-align: left;
+}
+
+.product-cards__price {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: @black;
+}
+
