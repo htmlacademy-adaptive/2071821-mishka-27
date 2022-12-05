@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2071821-mishka-27/3/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина товаров ручной работы «Мишка»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#"><span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">Корзина: <span>пока пуста</span></a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <main class="main-container">
+
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h1>
+
+        <div class="catalog__wrapper">
+          <ul class="catalog__list product-cards">
+            <li class="product-cards__item">
+              <a class="product-cards__link" href="product.html">
+                <img class="product-cards__image" src="img/photo-1-mobile.jpg" width="260" height="195" alt="Вязаный зайчик.">
+                <h2 class="product-cards__title">Зайчик-попрыгайчик</h2>
+              </a>
+              <span class="product-cards__description">Рост 30 см, вес 200 г</span>
+              <b class="product-cards__price">690 руб.</b>
+              <a class="product-cards__button" href="#">В корзину</a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link" href="product.html">
+                <img class="product-cards__image" src="img/photo-2-mobile.jpg" width="260" height="195" alt="Вязаная двухцветная корзинка для белья.">
+                <h2 class="product-cards__title">Диаметр 15 см, высота 10 см</h2>
+              </a>
+              <span class="product-cards__description">Рост 30 см, вес 200 г</span>
+              <b class="product-cards__price">1 500 руб.</b>
+              <a class="product-cards__button" href="#">В корзину</a>
+            </li>
+
+            <li class="product-cards__item">
+              <a class="product-cards__link" href="product.html">
+                <img class="product-cards__image" src="img/photo-3-mobile.jpg" width="260" height="195" alt="Вязаная большая корзинка с игрушками.">
+                <h2 class="product-cards__title">Большая корзинка для игрушек</h2>
+              </a>
+              <span class="product-cards__description">Диаметр 30 см, высота 30 см</span>
+              <b class="product-cards__price">1 200 руб.</b>
+              <a class="product-cards__button" href="#">В корзину</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="video">
+        <div class="video__wrapper">
+          <h2 class="video__title">Процесс производства</h2>
+          <button class="video__button" type="button">Воспроизвести</button>
+          <video class="video__content"></video>
+          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video__button" href="#">Сделать заказ</a>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer class="main-footer">
+
+      <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+        </li>
+      </ul>
+      </div>
+
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo-image" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
+            </svg>
+
+        </a>
+      </div>
+
+
+  </footer>
+
+
+    <section class="modal">
+      <div class="modal__container modal__container--close">
+        <h2 class="modal__title">Добавить в корзину</h2>
+
+        <form class="modal__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="filter-form__group">
+            <legend class="filter-form__title">Выберете размер:</legend>
+            <ul class="filter-form__list">
+              <li class="filter-form__item">
+                <label class="filter-form__control control">
+                  <input class="control__input visually-hidden " type="radio" name="size" value="small" checked>
+              S
+                </label>
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__control control">
+                  <input class="control__input visually-hidden " type="radio" name="size" value="medium">
+              M
+                </label>
+              </li>
+
+              <li class="filter-form__item">
+                <label class="filter-form__control control">
+                  <input class="control__input visually-hidden " type="radio" name="size" value="large">
+              L
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button filter-form__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
+
+  </body>
+</html>
