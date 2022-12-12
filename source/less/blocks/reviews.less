@@ -2,11 +2,42 @@
   padding: 58px 30px 45px 30px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding: 79px 50px 68px 50px;
+    background-image: url("../../img/review-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: @white;
+    background-size: contain;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 39px;
+  }
+}
+
+.reviews__list {
+  grid-column: 1/-1;
+}
+
 .reviews__title {
+  margin: 0;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .reviews__item {
@@ -46,4 +77,13 @@
 
 .reviews__write {
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__write {
+    width: 209px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+  }
 }

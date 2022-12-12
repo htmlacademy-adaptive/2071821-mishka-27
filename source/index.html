@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - милые штуки ручной работы для дома</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,23 +18,23 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item site-list__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#"><span class="visually-hidden">Поиск</span></a>
+            <li class="main-nav__item user-list__item">
+              <a class="main-nav__link" href="#"><span>Поиск</span></a>
             </li>
-            <li class="user-list__item">
-              <a href="#">Корзина: <span>пока пуста</span></a>
+            <li class="main-nav__item user-list__item">
+              <a class="main-nav__link" href="#">Корзина: <span>пока пуста</span></a>
             </li>
           </ul>
 
-          <div class="main-nav__delivery"><a href="#">Бесплатная доставка по России</a></div>
+          <div class="main-nav__delivery main-nav__off"><a href="#">Бесплатная доставка по России</a></div>
         </div>
 
       </nav>
@@ -55,9 +56,11 @@
       </section>
 
       <section class="featured-product">
-
+        <div class="featured-product__title-wrapper">
           <h2 class="featured-product__title">Вязаные корзинки</h2>
           <p class="featured-product__text">Товар недели</p>
+        </div>
+        <div class="featured-product__description-wrapper">
           <p class="featured-product__description">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках и трёх размерах.</p>
           <dl class="featured-product__list">
@@ -71,7 +74,7 @@
           <img class="featured-product__image" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Фото товара недели">
           <b class="featured-product__price">Цена: 990 руб.</b>
           <a class="button featured-product__order" href="#">Заказать</a>
-
+        </div>
       </section>
 
       <section class="about">
@@ -143,21 +146,21 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
           <span class="contacts__email contacts__subtitle">e-mail:</span>
           <span class="contacts__email">info@mimimishkashop.ru</span>
           <span class="contacts__addres contacts__subtitle">адрес:</span>
           <p class="contacts__addres">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</p>
-
         </div>
+
         <div class="contacts__map">
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d198.28665134097992!2d30.323035881449645!3d59.93871133572943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zaW5mb0BtaSDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyDigKnRg9C7LiDQkdC-0LvRjNGI0LDRjyDQmtC-0L3RjtGI0LXQvdC90LDRj-KAqSDQtC4gMTkvOCwg0L7RhNC40YEgMTAx!5e0!3m2!1sru!2slu!4v1669495551517!5m2!1sru!2slu" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <a class="contacts__write-us button" href="#">Напишите нам</a>
-
+        <div class="contacts__button-wrapper">
+          <a class="contacts__write-us button" href="#">Напишите нам</a>
+        </div>
       </section>
 
     </main>
