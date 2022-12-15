@@ -9,6 +9,9 @@
   font-size: 15px;
   line-height: 30px;
   margin-bottom: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .filter-form__list {
@@ -28,6 +31,13 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-form__item {
+    width: 112px;
+    padding: 18px 37px;
+  }
 }
 
 .filter-form__control {

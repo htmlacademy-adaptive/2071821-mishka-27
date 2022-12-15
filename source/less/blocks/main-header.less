@@ -1,7 +1,30 @@
-.main-header {
-  padding: 22px 31px;
+.main-header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+  height: 35px;
+  padding: 22px 0;
 }
 
-.main-header__logo {
-  margin-right: 67px;
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    padding-bottom: 20px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__wrapper {
+    order: 2;
+    width: 149px;
+    flex-basis: auto;
+  }
 }

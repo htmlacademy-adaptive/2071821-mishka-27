@@ -6,6 +6,18 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @desktop-width) {
+  .order-form__title {
+    padding-left: 47px;
+
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 175px;
+    }
+  }
+}
+
 .order-form__control {
   font-weight: 700;
   font-size: 17px;
@@ -19,6 +31,12 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__label {
+    flex-direction: row;
+  }
 }
 
 .order-form__input::placeholder {
@@ -35,6 +53,15 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: @desktop-width) {
+  .order-form__explanation {
+    font-size: 17px;
+    line-height: 30px;
+    color: @gray;
+    margin: 0;
+  }
+}
+
 .order-form__group {
   border: none;
   margin: 0;
@@ -49,10 +76,49 @@
   list-style-type: none;
 }
 
+@media (min-width: @desktop-width) {
+  .order-form__list {
+    padding-left: 175px;
+    margin-top: -18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__list--checkbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 87px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__list--name {
+    width: 700px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__list--contacts {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .order-form__input {
   border: none;
   width: 100%;
 }
+
+@media (min-width: @desktop-width) {
+  .order-form__input {
+    border-bottom: solid 2px #000000;
+    padding-bottom: 18px;
+    width: 700px;
+    margin-left: 67px;
+  }
+}
+
 
 .order-form__textarea {
   border: solid @gray 2px;
@@ -69,6 +135,12 @@
   flex-direction: column;
 }
 
+@media (min-width: @desktop-width) {
+  .order-form__item--checkbox {
+    width: 262px;
+  }
+}
+
 .order-form__button {
   font-size: 17px;
   line-height: 16px;
@@ -76,8 +148,33 @@
   width: 100%;
 }
 
+@media (min-width: @desktop-width) {
+  .order-form__button {
+    order: -1;
+    padding: 18px 17px;
+    width: fit-content;
+  }
+}
+
 .order-form__textarea::placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__textarea {
+    width: 700px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .order-form__button-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+  }
 }

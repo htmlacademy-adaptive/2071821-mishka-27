@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+  min-width: 182px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    min-width: 180px;
+    margin: 0;
+  }
 }
 
 .copyright__text {

@@ -1,6 +1,6 @@
 .hero {
   background-image: url("../../img/hero-mobile@2x.jpg");
-  background-color: @footer-color;
+  background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-position-x: center;
   min-height: 489px;
@@ -63,5 +63,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero__list {
+    margin: 0 auto;
+    width: 1050px;
   }
 }
