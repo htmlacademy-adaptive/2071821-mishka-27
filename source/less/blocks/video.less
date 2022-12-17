@@ -1,22 +1,3 @@
-.video {
-  width: calc(100% - 60px);
-  margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .video {
-    width: calc(100% - 100px);
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .video {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-
 .video__wrapper {
   display: flex;
   flex-direction: column;
@@ -99,6 +80,7 @@
   .video__description {
     font-size: 15px;
     line-height: 30px;
+    margin: 0;
     margin-bottom: 52px;
   }
 }
@@ -117,5 +99,12 @@
     width: calc(100% - 84px);
     margin: 0 auto;
     margin-bottom: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__button {
+    margin-left: 0;
+    padding: 18px 30px;
   }
 }

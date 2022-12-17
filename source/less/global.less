@@ -17,21 +17,20 @@ img {
 }
 
 .container {
-  min-width: 260px;
+  width: 260px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav {
+  .container {
+    width: 668px;
     padding: 0 50px;
-    min-width: 668px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav {
-    padding: 0 50px;
+  .container {
     width: 1050px;
   }
 }
