@@ -1,8 +1,14 @@
 .social {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 28px;
+  padding-bottom: 51px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    justify-content: center;
+    padding-bottom: 0;
+  }
 }
 
 .social__list {
@@ -14,8 +20,24 @@
   list-style-type: none;
 }
 
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: auto;
+  }
+}
+
 .social__link {
   display: block;
+  position: relative;
   width: 28px;
-  height: 22px;
+  height: 27px;
+}
+
+.social__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
 }

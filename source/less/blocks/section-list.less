@@ -9,7 +9,25 @@
 .sections-list__link {
   display: block;
   font-size: 19px;
+  line-height: 24px;
   font-weight: 700;
-  padding: 24px 160px 31px 30px;
+  padding: 24px 30px 31px 30px;
   color: @white;
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .sections-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 167px 34px 36px;
+    width: 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sections-list__link {
+    padding: 25px 350px 34px 36px;
+  }
 }

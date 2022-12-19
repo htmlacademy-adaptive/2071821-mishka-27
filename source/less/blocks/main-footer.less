@@ -1,4 +1,35 @@
 .main-footer {
   background-color: @footer-color;
-  padding: 25px 69px 23px 69px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__container {
+    padding: 25px 0 23px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer__container {
+    padding: 50px 0 58px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__logo-image {
+    display: flex;
+  }
 }
