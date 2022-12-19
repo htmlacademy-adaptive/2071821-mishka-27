@@ -37,6 +37,20 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__wrapper {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__wrapper {
+    width: 1050px;
+  }
+}
+
 .order-form__input::placeholder {
   font-size: 17px;
   line-height: 18px;
@@ -66,6 +80,27 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__group {
+    background-color: @footer-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__group--no-background {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__group--no-background {
+    width: 1050px;
+  }
+}
+
 .order-form__list {
   padding: 0;
   margin: 0;
@@ -79,17 +114,29 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__list--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .order-form__list--checkbox {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 87px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: @desktop-width) {
   .order-form__list--name {
     width: 700px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__list--contacts {
+    background-color: #f1f1f1;
   }
 }
 
@@ -104,6 +151,12 @@
 .order-form__input {
   border: none;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__input--contacts {
+    background-color: #f1f1f1;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -138,11 +191,17 @@
   width: 100%;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .order-form__button {
     order: -1;
     padding: 18px 17px;
     width: fit-content;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__button {
+    order: -1;
   }
 }
 
@@ -158,13 +217,20 @@
   }
 }
 
-
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .order-form__button-wraper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
+    width: 668px;
+    padding: 0 50px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__button-wraper {
+    width: 700px;
+    padding: 0;
   }
 }
