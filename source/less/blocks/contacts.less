@@ -62,6 +62,10 @@
   display: flex;
 }
 
+.contacts__email--underline {
+  border-bottom: solid 1px @green-light;
+}
+
 .contacts__email,
 .contacts__addres {
   margin: 0;
@@ -79,6 +83,7 @@
   width: 320px;
   height: 457px;
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,6 +112,12 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__iframe {
+    width: 100%;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .contacts__button-wrapper {
     display: flex;
@@ -119,8 +130,9 @@
 }
 
 .contacts__write-us {
-  width: 100%;
+  width: 320px;
   padding: 16px 37px;
+  margin-left: -30px;
 }
 
 @media (min-width: @tablet-width) {

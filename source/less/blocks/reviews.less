@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  padding-top: 58px;
+}
+
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
     background-image: url("../img/review-tablet.jpg");
@@ -24,6 +28,7 @@
 
 .reviews__title {
   margin: 0;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -75,8 +80,11 @@
   color: @gray;
 }
 
-.reviews__button-back {
-  margin-bottom: 38px;
+.reviews__button-back,
+.reviews__button-forward {
+  background-color: @white;
+  border: none;
+  padding: 13px 0;
 }
 
 .reviews__write {
@@ -90,4 +98,11 @@
     grid-row: 1/2;
     justify-self: end;
   }
+}
+
+.reviews__button-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 38px;
+  border: solid 1px @gray;
 }
