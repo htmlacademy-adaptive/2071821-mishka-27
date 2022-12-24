@@ -1,15 +1,23 @@
 .order-form__title {
   padding: 0;
+  padding-top: 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: @green-light;
   text-transform: uppercase;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .order-form__title {
-    padding-top: 66px;
+    padding-top: 43px;
+
+    &--contacts {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
   }
 }
 
@@ -38,6 +46,13 @@
   line-height: 18px;
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__label {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .order-form__label {
     display: flex;
@@ -46,10 +61,8 @@
 
 @media (min-width: @tablet-width) {
   .order-form__wrapper {
-    width: 668px;
     padding: 0;
-    margin: 0 auto;
-    padding-top: 43px;
+    background-color: #f1f1f1;
   }
 }
 
@@ -90,7 +103,9 @@
 
 @media (min-width: @tablet-width) {
   .order-form__group {
-    background-color: @footer-color;
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 }
 
@@ -113,13 +128,17 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  padding-top: 42px;
+  padding-top: 35px;
 }
 
 @media (min-width: @tablet-width) {
   .order-form__list {
     padding-left: 169px;
     margin-top: -60px;
+
+    &--contact {
+      margin-top: 0;
+    }
   }
 }
 
@@ -136,7 +155,6 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 26px;
     padding-left: 169px;
-    margin-top: -59px;
   }
 }
 
@@ -144,6 +162,7 @@
   .order-form__list--checkbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 163px;
   }
 }
 
@@ -151,10 +170,21 @@
   padding-top: 6px;
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__list--name {
+    margin-top: -39px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .order-form__list--name {
     width: 700px;
   }
+}
+
+.order-form__name-group-wrapper {
+  padding-top: 66px;
+  padding-bottom: 50px;
 }
 
 .order-form__list--contacts {
@@ -164,6 +194,9 @@
 @media (min-width: @tablet-width) {
   .order-form__list--contacts {
     background-color: #f1f1f1;
+    margin: 0 auto;
+    width: 668px;
+    padding: 0 50px;
   }
 }
 
@@ -185,6 +218,8 @@
 @media (min-width: @tablet-width) {
   .order-form__input--contacts {
     background-color: #f1f1f1;
+    width: 501px;
+    margin-left: auto;
   }
 }
 
@@ -208,9 +243,49 @@
   padding-top: 35px;
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__item--contacts {
+    padding: 0;
+  }
+}
+
 .order-form__item--addition {
   padding: 0;
   padding-top: 35px;
+}
+
+.order-form__tel-icon {
+  position: absolute;
+  width: 25px;
+  height: 24px;
+  left: 228px;
+  top: 66px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__tel-icon {
+    right: 19px;
+    top: 18px;
+    z-index: 5;
+  }
+}
+
+.order-form__mail-icon {
+  position: absolute;
+  width: 32px;
+  height: 21px;
+  left: 225px;
+  top: 66px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__mail-icon {
+    right: 19px;
+    top: 18px;
+    z-index: 5;
+  }
 }
 
 .order-form__textarea {
@@ -226,7 +301,9 @@
 
 @media (min-width: @desktop-width) {
   .order-form__item--checkbox {
-    width: 262px;
+    padding-left: 82px;
+    padding-right: 0;
+    width: 180px;
   }
 }
 
@@ -257,10 +334,22 @@
   line-height: 16px;
 }
 
+@media (min-width: @tablet-width) {
+  .order-form__textarea {
+    width: 501px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .order-form__textarea {
     width: 700px;
   }
+}
+
+.order-form__button-wraper {
+  padding-bottom: 55px;
 }
 
 @media (min-width: @tablet-width) {
@@ -270,6 +359,8 @@
     align-items: center;
     width: 668px;
     padding: 0 50px;
+    padding-top: 53px;
+    padding-bottom: 50px;
     margin: 0 auto;
   }
 }
@@ -284,4 +375,11 @@
 .order-form__item--name {
   padding: 0;
   padding-top: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__item--name {
+    padding: 0;
+    padding-bottom: 22px;
+  }
 }

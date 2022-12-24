@@ -14,3 +14,19 @@
     align-items: center;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .user-list__item:last-child {
+    min-width: 264px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list__item:first-child {
+    min-width: 82px;
+    min-height: 89px;
+    border-left: solid 1px @gray-light;
+    border-right: solid 1px @gray-light;
+  }
+}

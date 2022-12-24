@@ -15,6 +15,8 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0 50px;
+    padding-top: 75px;
+    padding-bottom: 105px;
   }
 }
 
@@ -33,6 +35,7 @@
     grid-template-columns: 1fr 1fr;
     width: 668px;
     padding: 0 50px;
+    padding-bottom: 49px;
   }
 }
 
@@ -52,6 +55,37 @@
   font-size: 25px;
   line-height: 30px;
   grid-column: 1/-1;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title::after {
+    content: "";
+    display: block;
+    background-image: url("../img/flag.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    width: 47px;
+    height: 81px;
+    position: absolute;
+    top: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title::after {
+    left: -64px;
+    top: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 79px;
+    padding-bottom: 35px;
+  }
 }
 
 .contacts__mail-wrapper {
@@ -72,6 +106,20 @@
   font-size: 14px;
   line-height: 30px;
   color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__email,
+  .contacts__addres {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__email-wrapper,
+  .contacts__addres-wrapper {
+    width: 326px;
+  }
 }
 
 .contacts__subtitle {
@@ -99,6 +147,7 @@
     grid-column: 2/3;
     grid-row: 1/3;
     width: 527px;
+    margin: 0;
   }
 }
 
@@ -126,6 +175,7 @@
     align-content: flex-end;
     width: 230px;
     padding-left: 174px;
+    margin: 0;
   }
 }
 
@@ -148,5 +198,6 @@
 @media (min-width: @desktop-width) {
   .contacts__write-us {
     padding: 16px 27px;
+    margin: 0;
   }
 }
