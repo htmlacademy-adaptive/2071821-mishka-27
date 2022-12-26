@@ -34,14 +34,20 @@
 
 .order-form__title::after {
   content: "";
-  width: 50px;
+  width: calc(240px - 100%);
   height: 2px;
-  background-color: @green;
+  background-color: @green-light;
   display: block;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: calc(100% + 20px);
   position: absolute;
   z-index: 5;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__title::after {
+    display: none;
+  }
 }
 
 .order-form__control {
@@ -245,6 +251,12 @@
   padding-right: 45px;
   padding-left: 60px;
   padding-bottom: 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__item {
+    padding-left: 82px;
+  }
 }
 
 .order-form__item--contacts {
