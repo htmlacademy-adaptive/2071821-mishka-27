@@ -2,6 +2,16 @@
   min-height: 81px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-header {
+    background-color: @footer-color;
+
+    &--index {
+      background-color: #f9f9f9;
+    }
+  }
+}
+
 .main-header__logo {
   display: block;
   margin: 0 auto;
@@ -37,6 +47,7 @@
   border-bottom: solid 1px #ececec;
   position: relative;
   background-color: @white;
+  min-height: 88px;
 }
 
 @media (min-width: @tablet-width) {
@@ -56,7 +67,7 @@
     order: 2;
     width: 149px;
     flex-basis: auto;
-    flex-grow: 0;
+    justify-content: center;
   }
 }
 
