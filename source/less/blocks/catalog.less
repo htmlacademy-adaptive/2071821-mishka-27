@@ -9,8 +9,38 @@
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 57px;
+    padding-bottom: 75px;
+    margin: 0;
+    position: relative;
+  }
+}
+
+.catalog__title::after {
+  content: "";
+  background-image: url("../img/zigzag-fill-tablet.svg");
+  background-repeat: no-repeat;
+  width: 770px;
+  height: 24px;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
 .catalog__wrapper {
   padding: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    padding: 67px 0 53px 0;
+  }
 }
 
 .catalog__list {

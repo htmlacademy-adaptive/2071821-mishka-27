@@ -4,6 +4,8 @@
     order: 2;
     align-items: center;
     justify-content: flex-end;
+    background-color: @white;
+    position: relative;
   }
 }
 
@@ -12,5 +14,21 @@
     order: 3;
     flex-basis: auto;
     align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list__item:last-child {
+    min-width: 264px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list__item:first-child {
+    min-width: 82px;
+    min-height: 88px;
+    border-left: solid 1px @gray-light;
+    border-right: solid 1px @gray-light;
   }
 }
