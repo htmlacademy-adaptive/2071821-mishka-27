@@ -12,6 +12,19 @@
     flex-basis: auto;
     align-items: center;
     background-color: @white;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list::before {
+    content: "";
+    position: absolute;
+    background-color: @white;
+    height: 100%;
+    width: calc(50vw - 525px);
+    top: 0;
+    right: 387px;
   }
 }
 

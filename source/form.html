@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -12,7 +16,11 @@
       <nav class="main-nav main-nav--nojs">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина товаров ручной работы «Мишка»">
+            <picture>
+              <source  media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source  media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина товаров ручной работы «Мишка»">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -138,22 +146,22 @@
           </fieldset>
         </div>
         <div class="order-form__name-group-wrapper">
-          <fieldset class="order-form__group order-form__group--no-background">
+          <fieldset class="order-form__group order-form__group--no-background name-group">
             <legend class="order-form__title name-group__title">ФИО</legend>
               <ul class="order-form__list order-form__list--name">
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">Имя:
-                    <input class="order-form__input name__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+                    <input class="order-form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
                   </label>
                 </li>
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">
-              Фамилия:<input class="order-form__input name__input" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+              Фамилия:<input class="order-form__input" type="text" name="last-name" placeholder="Укажите фамилию*" required>
                   </label>
                 </li>
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">
-              Отчество:<input class="order-form__input name__input " type="text" name="patronymic-name" placeholder="Отчество, если желаете">
+              Отчество:<input class="order-form__input" type="text" name="patronymic-name" placeholder="Отчество, если желаете">
                   </label>
                 </li>
               </ul>
