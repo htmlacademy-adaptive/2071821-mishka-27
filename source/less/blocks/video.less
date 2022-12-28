@@ -74,6 +74,43 @@
   }
 }
 
+.video__content {
+  background-image: url("../img/video-mobile.jpg");
+  background-color: @gray-light;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video__content {
+    background-image: url("../img/video-tablet.jpg");
+    width: 668px;
+    height: 455px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__content {
+    background-image: url("../img/video-desktop.jpg");
+    width: 683px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 683px auto;
+    }
+  }
+}
+
 .video__description {
   font-size: 13px;
   line-height: 24px;
