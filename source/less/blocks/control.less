@@ -21,6 +21,16 @@
   }
 }
 
+.control:hover .control__mark,
+.control:hover .control__circle {
+  border-color: #62d1ba;
+}
+
+.control:active .control__mark,
+.control:active .control__circle {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .control__input[type="checkbox"]:checked + .control__mark::before {
   position: absolute;
   top: 0;

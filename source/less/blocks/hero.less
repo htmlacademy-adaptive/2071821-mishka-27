@@ -10,6 +10,31 @@
 @media (min-width: @tablet-width) {
   .hero {
     min-height: 701px;
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .hero::after {
+    content: "";
+    background-image: url("../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 24px;
+    display: block;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero::after {
+    content: "";
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    height: 34px;
+    bottom: -14px;
   }
 }
 

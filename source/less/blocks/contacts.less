@@ -96,16 +96,27 @@
   display: flex;
 }
 
-.contacts__email--underline {
-  border-bottom: solid 1px @green-light;
-}
-
 .contacts__email,
 .contacts__addres {
   margin: 0;
   font-size: 14px;
   line-height: 30px;
   color: @gray;
+}
+
+.contacts__email--underline {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: #62d1ba;
+}
+
+.contacts__email--underline:hover {
+  color: #46c1ae;
+  text-decoration-color: #46c1ae;
+}
+
+.contacts__email--underline:active {
+  text-decoration-color: rgba(70, 193, 174, 0.1);
 }
 
 @media (min-width: @tablet-width) {

@@ -10,6 +10,14 @@
   }
 }
 
+.product-cards__link:hover .product-cards__title {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.product-cards__link:active .product-cards__title {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .product-cards__link-image {
     grid-row: 1/4;
@@ -170,4 +178,16 @@
   .product-cards__image {
     margin: 0;
   }
+}
+
+.product-cards__button {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.product-cards__button:hover {
+  color: #63d1bb;
+}
+
+.product-cards__button:active {
+  color: rgba(99, 209, 187, 0.3);
 }

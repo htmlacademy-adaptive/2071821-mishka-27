@@ -163,6 +163,24 @@
   padding-bottom: 27px;
   box-sizing: border-box;
   position: relative;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.main-nav__link:hover .main-nav__search-icon,
+.main-nav__link:hover .main-nav__basket-icon {
+  color: @green-light;
+}
+
+.main-nav__link:active .main-nav__search-icon,
+.main-nav__link:active .main-nav__basket-icon {
+  color: rgba(99, 209, 187, 0.3);
 }
 
 @media (min-width: @tablet-width) {
@@ -219,6 +237,7 @@
   left: 30px;
   width: 18px;
   height: 18px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: @tablet-width) {
@@ -235,6 +254,7 @@
   left: 30px;
   width: 18px;
   height: 18px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: @tablet-width) {
