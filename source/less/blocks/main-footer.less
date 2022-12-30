@@ -23,9 +23,18 @@
 @media (min-width: @tablet-width) {
   .main-footer__logo-image {
     display: flex;
+    color: @black;
   }
 }
 
 .main-footer__copyright {
   padding-bottom: 32px;
+}
+
+.main-footer__logo-link:hover .main-footer__logo-image {
+  color: #46c1ae;
+}
+
+.main-footer__logo-link:active .main-footer__logo-image {
+  color: rgba(70, 193, 174, 0.3);
 }
