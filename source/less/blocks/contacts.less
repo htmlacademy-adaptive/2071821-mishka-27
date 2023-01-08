@@ -1,10 +1,11 @@
 .contacts {
-  padding: 38px 0 39px 0;
+  padding: 0 0 39px 0;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    padding: 68px 0 57px 0;
+    padding: 0 0 57px 0;
   }
 }
 
@@ -15,13 +16,13 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0 50px;
-    padding-top: 75px;
+    padding-top: 94px;
     padding-bottom: 105px;
   }
 }
 
 .contacts__wrapper {
-  padding: 28px 30px 62px 30px;
+  padding: 44px 30px 62px 30px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -29,13 +30,40 @@
   margin: 0 auto;
 }
 
+.contacts__wrapper::before {
+  content: "";
+  background-image: url("../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+  height: 6px;
+  display: block;
+  background-position: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 668px;
-    padding: 0 50px;
-    padding-bottom: 49px;
+    padding: 85px 50px 49px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper::before {
+    content: "";
+    background-image: url("../img/zigzag-line-tablet.svg");
+    background-repeat: repeat-x;
+    height: 17px;
+    display: block;
+    background-position: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
   }
 }
 
@@ -46,6 +74,21 @@
     padding-left: 174px;
     display: block;
     width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__wrapper::before {
+    content: "";
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    height: 23px;
+    display: block;
+    background-position: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
   }
 }
 
@@ -74,8 +117,8 @@
 
 @media (min-width: @desktop-width) {
   .contacts__title::after {
-    left: -64px;
-    top: -30px;
+    right: 414px;
+    top: 54px;
   }
 }
 
@@ -88,7 +131,7 @@
   }
 }
 
-.contacts__mail-wrapper {
+.contacts__email-wrapper {
   display: flex;
 }
 
@@ -130,6 +173,7 @@
   .contacts__email-wrapper,
   .contacts__addres-wrapper {
     width: 326px;
+    padding-bottom: 30px;
   }
 }
 
@@ -191,9 +235,8 @@
 }
 
 .contacts__write-us {
-  width: 320px;
+  width: 100%;
   padding: 16px 37px;
-  margin-left: -30px;
 }
 
 @media (min-width: @tablet-width) {

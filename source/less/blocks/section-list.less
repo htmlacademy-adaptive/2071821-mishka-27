@@ -1,8 +1,8 @@
-.sections-list__item--interior {
+.sections-list__link--interior {
   background-color: @green-light;
 }
 
-.sections-list__item--toys {
+.sections-list__link--toys {
   background-color: @green-dark;
 }
 
@@ -32,13 +32,13 @@
   position: relative;
 }
 
-.sections-list__link:hover .sections-list__item--interior,
-.sections-list__link:active .sections-list__item--interior {
+.sections-list__link--interior:hover,
+.sections-list__link--interior:active {
   background-color: #59d5bc;
 }
 
-.sections-list__link:hover .sections-list__item--toys,
-.sections-list__link:active .sections-list__item--toys {
+.sections-list__link--toys:hover,
+.sections-list__link--toys:active {
   background-color: #46c1ae;
 }
 
@@ -63,12 +63,13 @@
     font-size: 20px;
     line-height: 30px;
     padding: 25px 167px 34px 36px;
-    width: 130px;
+    width: 131px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .sections-list__link {
     padding: 25px 350px 34px 36px;
+    width: 139px;
   }
 }

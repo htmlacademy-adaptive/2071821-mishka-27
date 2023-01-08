@@ -18,13 +18,6 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: @tablet-width) {
-  .product-cards__link-image {
-    grid-row: 1/4;
-    grid-column: 1/2;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .product-cards__link-image {
     grid-row: 1/2;
@@ -42,7 +35,6 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  border: 1px solid #ececec;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,17 +50,36 @@
   }
 }
 
+.product-cards__item:hover .product-cards__description {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-cards__item:active .product-cards__description {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: @desktop-width) {
   .product-cards__item {
     grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content auto min-content;
+    grid-template-rows: min-content auto;
   }
 }
 
+.product-cards__description {
+  border: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .product-cards__description {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+  }
+}
+
+
 .product-cards__title {
   margin: 0;
-  margin-bottom: 6px;
-  padding: 0 28px;
+  padding: 28px 28px 6px 28px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -129,17 +140,18 @@
   }
 }
 
-.product-cards__description {
+.product-cards__details {
   font-size: 13px;
   line-height: 30px;
   color: @gray;
   text-align: left;
   padding: 0 30px;
   margin-bottom: 41px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
-  .product-cards__description {
+  .product-cards__details {
     margin: 0;
     padding: 0 33px 0 34px;
     font-size: 15px;
@@ -148,7 +160,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .product-cards__description {
+  .product-cards__details {
     margin: 0;
     padding: 0 33px 13px 34px;
     font-size: 15px;
@@ -164,7 +176,6 @@
 }
 
 .product-cards__image {
-  margin-bottom: 28px;
   display: block;
 }
 
@@ -177,6 +188,7 @@
 @media (min-width: 768px) {
   .product-cards__image {
     margin: 0;
+    width: 100%;
   }
 }
 

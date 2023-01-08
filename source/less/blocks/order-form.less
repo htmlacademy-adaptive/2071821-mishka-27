@@ -6,6 +6,10 @@
   color: @green-light;
   text-transform: uppercase;
   position: relative;
+
+  &--contacts {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -34,12 +38,12 @@
 
 .order-form__title::after {
   content: "";
-  width: calc(240px - 100%);
+  width: 200px;
   height: 2px;
   background-color: @green-light;
   display: block;
-  top: 50%;
-  left: calc(100% + 20px);
+  top: 8px;
+  left: 60px;
   position: absolute;
   z-index: 5;
 }
@@ -255,7 +259,6 @@
 
 @media (min-width: @desktop-width) {
   .order-form__input {
-    border-bottom: solid 2px #000000;
     padding-bottom: 18px;
     width: 700px;
     margin-left: 67px;
@@ -305,8 +308,9 @@
   width: 25px;
   height: 24px;
   right: 4px;
-  top: 37px;
+  top: 31px;
   display: block;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: @tablet-width) {
@@ -319,7 +323,7 @@
 
 @media (min-width: @desktop-width) {
   .order-form__tel-icon {
-    right: 190px;
+    right: 183px;
     top: 18px;
     z-index: 5;
   }
@@ -332,6 +336,17 @@
   right: 3px;
   top: 37px;
   display: block;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.order-form__input:hover + .order-form__mail-icon,
+.order-form__input:active + .order-form__mail-icon {
+  color: #62d1ba;
+}
+
+.order-form__input:hover + .order-form__tel-icon,
+.order-form__input:active + .order-form__tel-icon {
+  color: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {
@@ -344,7 +359,7 @@
 
 @media (min-width: @desktop-width) {
   .order-form__mail-icon {
-    right: 184px;
+    right: 183px;
     top: 18px;
     z-index: 5;
   }

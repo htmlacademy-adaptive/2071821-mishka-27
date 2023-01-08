@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - милые штуки ручной работы для дома</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="main-header main-header--index">
 
-        <nav class="main-nav main-nav--nojs">
+        <nav class="main-nav">
           <div class="main-header__wrapper">
             <a class="main-header__logo" href="index.html">
               <picture>
@@ -45,7 +45,7 @@
               <li class="main-nav__item user-list__item">
                 <a class="main-nav__link" href="#">
                   <svg class="main-nav__basket-icon" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite.svg#basket" />
+                    <use href="img/sprite.svg#cart" />
                   </svg>
                   Корзина: <span>пока пуста</span></a>
               </li>
@@ -72,7 +72,7 @@
         </div>
         <ul class="hero__list sections-list">
           <li class="sections-list__item sections-list__item--interior">
-            <a class="sections-list__link" href="#">Предметы интерьера
+            <a class="sections-list__link sections-list__link--interior" href="#">Предметы интерьера
               <svg class="sections-list__interior-icon" width="40" height="62" viewBox="0 0 40 62" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite.svg#interior" />
               </svg>
@@ -80,7 +80,7 @@
             </a>
           </li>
           <li class="sections-list__item sections-list__item--toys">
-            <a class="sections-list__link" href="#">Детские игрушки
+            <a class="sections-list__link sections-list__link--toys" href="#">Детские игрушки
               <svg class="sections-list__toys-icon" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite.svg#toy" />
                 </svg>
@@ -148,41 +148,22 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
-                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                  больше лайков!</p>
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                 <cite class="reviews__author-name">Анастасия Красильникова</cite>
                 <span class="reviews__author-instagram">@misssssiskras</span>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                  больше лайков!</p>
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <span class="reviews__author-instagram">@misssssiskras</span>
-              </div>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                  и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                  больше лайков!</p>
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <span class="reviews__author-instagram">@misssssiskras</span>
-              </div>
-            </blockquote>
+
             <div class="reviews__button-wrapper">
               <button class="reviews__button-back" type="button">
-                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#back" />
+                <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#arrow-back" />
                 </svg>
                 <span class="visually-hidden">Предыдущий отзыв</span>
               </button>
               <button class="reviews__button-forward" type="button">
-                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#forward" />
+                <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#arrow-forward" />
                 </svg>
                 <span class="visually-hidden">Следующий отзыв</span>
               </button>
@@ -197,7 +178,7 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__mail-wrapper">
+          <div class="contacts__email-wrapper">
             <span class="contacts__email contacts__subtitle">e-mail:</span>
             <a class="contacts__email contacts__email--underline" href="#">info@mimimishkashop.ru</a>
           </div>
@@ -222,7 +203,7 @@
         <div class="main-footer__logo logo">
         <a class="main-footer__logo-link" href="index.html">
           <svg class="main-footer__logo-image" aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite.svg#footerlogo" />
+            <use href="img/sprite.svg#logo-footer" />
           </svg>
           <span class="visually-hidden">Логотип магазина мишка</span>
         </a>
@@ -261,7 +242,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo-image" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#copyrightlogo" />
+              <use href="img/sprite.svg#htmlacademy" />
             </svg>
 
           </a>
@@ -307,6 +288,6 @@
 
         </section>
       </div>
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>
