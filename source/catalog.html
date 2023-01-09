@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -46,7 +46,7 @@
             <li class="main-nav__item user-list__item">
               <a class="main-nav__link" href="#">
                 <svg class="main-nav__basket-icon" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#basket" />
+                  <use href="img/sprite.svg#cart" />
                 </svg>
                 Корзина: <span>пока пуста</span></a>
             </li>
@@ -82,41 +82,46 @@
                   <source  media="(min-width: 768px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <img class="product-cards__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный зайчик.">
                 </picture>
-                </a>
+              </a>
+
+            <div class="product-cards__description">
               <a class="product-cards__link" href="product.html">
                 <h2 class="product-cards__title">Зайчик-попрыгайчик</h2>
               </a>
-              <span class="product-cards__description">Рост 30 см, вес 200 г</span>
+              <span class="product-cards__details">Рост 30 см, вес 200 г</span>
               <div class="product-cards__wrapper">
                 <b class="product-cards__price">1200 руб.</b>
                 <a class="product-cards__button" href="#">
                   <svg width="20" height="19" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite.svg#basket" />
+                    <use href="img/sprite.svg#cart" />
                   </svg>
-                  <span class="visually-hidden">В корзину</span></a>
+                  <span class="visually-hidden">Добавить в  корзину</span></a>
               </div>
+            </div>
             </li>
 
             <li class="product-cards__item">
               <a class="product-cards__link product-cards__link-image" href="product.html">
                 <picture>
                   <source  media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                  <source  media="(min-width: 768px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source  media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                   <img class="product-cards__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная двухцветная корзинка для белья.">
                 </picture>
-                </a>
+              </a>
+            <div class="product-cards__description">
               <a class="product-cards__link" href="product.html">
                 <h2 class="product-cards__title">Корзинка для белья</h2>
               </a>
-              <span class="product-cards__description">Диаметр 15 см, высота 10 см</span>
+              <span class="product-cards__details">Диаметр 15 см, высота 10 см</span>
               <div class="product-cards__wrapper">
                 <b class="product-cards__price">690 руб.</b>
                 <a class="product-cards__button" href="#">
                   <svg width="20" height="19" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite.svg#basket" />
+                    <use href="img/sprite.svg#cart" />
                   </svg>
-                  <span class="visually-hidden">В корзину</span></a>
+                  <span class="visually-hidden">Добавить в корзину</span></a>
               </div>
+            </div>
             </li>
 
             <li class="product-cards__item">
@@ -126,28 +131,30 @@
                   <source  media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                   <img class="product-cards__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаная большая корзинка с игрушками.">
                 </picture>
-                </a>
+              </a>
+            <div class="product-cards__description">
               <a class="product-cards__link" href="product.html">
                 <h2 class="product-cards__title">Большая корзинка для игрушек</h2>
               </a>
-              <span class="product-cards__description">Диаметр 30 см, высота 30 см</span>
+              <span class="product-cards__details">Диаметр 30 см, высота 30 см</span>
               <div class="product-cards__wrapper">
                 <b class="product-cards__price">1 500 руб.</b>
                 <a class="product-cards__button" href="#">
                   <svg width="20" height="19" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite.svg#basket" />
+                    <use href="img/sprite.svg#cart" />
                   </svg>
 
-                  <span class="visually-hidden">В корзину</span></a>
+                  <span class="visually-hidden">Добавить в корзину</span></a>
               </div>
+            </div>
             </li>
           </ul>
         </div>
       </section>
 
 
-      <section class="video">
-        <div class="video__wrapper container">
+      <section class="video container">
+        <div class="video__wrapper">
           <h2 class="video__title">Процесс производства</h2>
           <div class="video__content-wrapper">
             <button class="video__button-play" type="button">
@@ -168,7 +175,7 @@
         <div class="main-footer__logo logo">
         <a class="main-footer__logo-link" href="index.html">
           <svg class="main-footer__logo-image" aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite.svg#footerlogo" />
+            <use href="img/sprite.svg#logo-footer" />
           </svg>
           <span class="visually-hidden">Логотип магазина мишка</span>
         </a>
@@ -207,7 +214,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__logo-image" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#copyrightlogo" />
+              <use href="img/sprite.svg#htmlacademy" />
             </svg>
 
           </a>
