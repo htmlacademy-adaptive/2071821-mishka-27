@@ -17,6 +17,7 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 1050px;
+    align-items: stretch;
   }
 }
 
@@ -44,8 +45,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 15px;
+  top: 26px;
+  left: 20px;
   width: 20px;
   height: 14px;
   background-color: #ffffff;
@@ -138,8 +139,7 @@
     display: flex;
     order: 4;
     flex-basis: 50%;
-    border-top: solid 1px @gray-light;
-    padding-top: 22px;
+    padding-top: 20px;
   }
 }
 
@@ -241,6 +241,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__search-icon {
+    top: 36px;
+    left: 32px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .main-nav__basket-icon {
     position: absolute;
     left: 31px;
@@ -252,7 +259,7 @@
   position: absolute;
   top: 31px;
   left: 30px;
-  width: 18px;
+  width: 21px;
   height: 18px;
   color: rgba(0, 0, 0, 0.2);
 }
@@ -261,7 +268,7 @@
   .main-nav__basket-icon {
     position: absolute;
     left: 31px;
-    top: 5px;
+    top: 3px;
   }
 }
 
@@ -284,14 +291,13 @@
     order: 4;
     flex-basis: 50%;
     justify-content: flex-end;
-    padding-top: 22px;
-    border-top: solid 1px @gray-light;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__off {
-    border-top: solid 1px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
   }
 }
 

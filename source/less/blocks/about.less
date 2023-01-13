@@ -27,9 +27,9 @@
 
 @media (min-width: @tablet-width) {
   .about__title {
-    margin-bottom: 82px;
+    margin-bottom: 98px;
     padding: 0;
-    padding-top: 71px;
+    padding-top: 73px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -90,7 +90,7 @@
 
 @media (min-width: @desktop-width) {
   .about__list {
-    margin-left: 175px;
+    margin: 0 175px;
   }
 }
 
@@ -110,9 +110,16 @@
     font-size: 20px;
     line-height: 22px;
 
-    &:not(:last-child) {
+    &:not(:nth-child(3)):not(:nth-child(6)) {
       margin-bottom: 110px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__item:nth-child(3),
+  .about__item:nth-child(6) {
+    margin-bottom: 0;
   }
 }
 
@@ -156,7 +163,7 @@
   height: 27px;
   display: block;
   position: absolute;
-  left: 8px;
+  left: 0;
   top: -54px;
 }
 
@@ -178,8 +185,8 @@
   height: 27px;
   display: block;
   position: absolute;
-  left: 8px;
-  top: -54px;
+  left: 7px;
+  top: -49px;
 }
 
 .about__item--ball {
@@ -200,8 +207,8 @@
   height: 34px;
   display: block;
   position: absolute;
-  left: 8px;
-  top: -54px;
+  left: 3px;
+  top: -52px;
 }
 
 .about__item--rocket {
@@ -222,8 +229,8 @@
   height: 23px;
   display: block;
   position: absolute;
-  left: 8px;
-  top: -54px;
+  left: -6px;
+  top: -51px;
 }
 
 .about__item--gift {
@@ -244,6 +251,6 @@
   height: 32px;
   display: block;
   position: absolute;
-  left: 8px;
-  top: -54px;
+  left: 3px;
+  top: -53px;
 }

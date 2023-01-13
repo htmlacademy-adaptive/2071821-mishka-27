@@ -22,10 +22,10 @@
 }
 
 .contacts__wrapper {
-  padding: 44px 30px 62px 30px;
+  padding: 43px 30px 62px 30px;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 28px;
   width: 260px;
   margin: 0 auto;
 }
@@ -49,6 +49,7 @@
     grid-template-columns: 1fr 1fr;
     width: 668px;
     padding: 85px 50px 49px;
+    row-gap: 50px;
   }
 }
 
@@ -71,7 +72,7 @@
   .contacts__wrapper {
     margin: 0 auto;
     padding: 0;
-    padding-left: 174px;
+    padding-left: 151px;
     display: block;
     width: auto;
   }
@@ -102,23 +103,30 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .contacts__title::after {
     content: "";
     display: block;
     background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
-    right: 0;
+    right: 3px;
     width: 47px;
     height: 81px;
     position: absolute;
-    top: -30px;
+    top: -22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__title::after {
-    right: 414px;
-    top: 54px;
+    right: 390px;
+    top: 62px;
   }
 }
 
@@ -149,8 +157,14 @@
 
 .contacts__email--underline {
   text-decoration: underline;
-  text-underline-offset: 12px;
+  text-underline-offset: 6px;
   text-decoration-color: #62d1ba;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__email--underline {
+    text-underline-offset: 12px;
+  }
 }
 
 .contacts__email--underline:hover {
@@ -186,7 +200,7 @@
   width: 320px;
   height: 457px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: @tablet-width) {
@@ -219,6 +233,7 @@
 @media (min-width: @tablet-width) {
   .contacts__iframe {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -236,7 +251,7 @@
 
 .contacts__write-us {
   width: 100%;
-  padding: 16px 37px;
+  padding: 14px 37px;
 }
 
 @media (min-width: @tablet-width) {
@@ -244,7 +259,7 @@
     display: block;
     padding: 16px 28px;
     font-size: 17px;
-    width: fit-content;
+    width: 230px;
     margin: 0 auto;
   }
 }

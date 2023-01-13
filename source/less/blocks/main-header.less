@@ -1,10 +1,11 @@
 .main-header {
-  min-height: 81px;
+  min-height: 80px;
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
     background-color: @footer-color;
+    overflow: hidden;
 
     &--index {
       background-color: #f9f9f9;
@@ -17,7 +18,7 @@
   margin: 0 auto;
   width: 86px;
   height: 35px;
-  padding: 22px 0;
+  padding: 21px 0 22px 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,7 +34,7 @@
 @media (min-width: @desktop-width) {
   .main-header__logo {
     width: 149px;
-    height: 73px;
+    height: 72px;
     padding-top: 9px;
     padding-bottom: 7px;
   }
@@ -66,7 +67,8 @@
   border-bottom: solid 1px #ececec;
   position: relative;
   background-color: @white;
-  min-height: 88px;
+  min-height: 80px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -78,6 +80,7 @@
     width: auto;
     padding: 0;
     margin: 0;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -90,6 +93,7 @@
     width: calc(50vw - 334px);
     top: 0;
     right: 320px;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -104,7 +108,8 @@
     order: 2;
     width: 149px;
     flex-basis: auto;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 63px;
   }
 }
 
