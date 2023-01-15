@@ -241,27 +241,20 @@
           <legend class="filter-form__title">Выберите размер:</legend>
           <ul class="filter-form__list">
             <li class="filter-form__item">
-              <label class="filter-form__control control">
-                <input class="control__input visually-hidden" type="radio" name="size" value="small" checked>
-          S
-              </label>
+              <input class="control__input visually-hidden" type="radio" id="small" name="size" value="small" checked>
+              <label class="filter-form__control control" for="small">S</label>
             </li>
-
             <li class="filter-form__item">
-              <label class="filter-form__control control">
-                <input class="control__input visually-hidden " type="radio" name="size" value="medium">
-          M
-              </label>
+              <input class="control__input visually-hidden" type="radio" id="medium" name="size" value="medium">
+              <label class="filter-form__control control" for="medium">M</label>
             </li>
-
             <li class="filter-form__item">
-              <label class="filter-form__control control">
-                <input class="control__input visually-hidden " type="radio" name="size" value="large">
-          L
-              </label>
+              <input class="control__input visually-hidden" type="radio" id="large" name="size" value="large">
+              <label class="filter-form__control control" for="large">L</label>
             </li>
           </ul>
         </fieldset>
+
 
         <button class="filter-form__button button" type="submit">Добавить</button>
       </form>
