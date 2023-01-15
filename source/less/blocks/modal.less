@@ -13,19 +13,23 @@
 }
 
 .modal__content {
+  position: relative;
   box-sizing: border-box;
   padding: 29px 30px 46px 30px;
   background-color: @white;
-  margin: auto;
   width: 100%;
+  height: fit-content;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  top: 1046px;
 }
 
 @media (min-width: @tablet-width) {
   .modal__content {
     width: 566px;
     padding: 37px 92px 46px 92px;
+    margin: 0 auto;
+    top: 1532px;
   }
 }
 
