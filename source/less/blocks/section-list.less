@@ -49,27 +49,15 @@
 .sections-list__link--interior:hover,
 .sections-list__link--interior:active {
   background-color: #59d5bc;
-  height: 53px;
+  transform: translateY(-5px);
+  transition: transform 0.25s;
 }
 
 .sections-list__link--toys:hover,
 .sections-list__link--toys:active {
   background-color: #46c1ae;
-  height: 53px;
-}
-
-@media (min-width: @tablet-width) {
-  .sections-list__link--interior:hover,
-  .sections-list__link--interior:active {
-    transform: translateY(-5px);
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .sections-list__link--toys:hover,
-  .sections-list__link--toys:active {
-    transform: translateY(-5px);
-  }
+  transform: translateY(-5px);
+  transition: transform 0.25s;
 }
 
 .sections-list__link:hover .sections-list__interior-icon {

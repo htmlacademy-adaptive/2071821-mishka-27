@@ -15,12 +15,11 @@
 .about__title::before {
   content: "";
   background-image: url("../../img/zigzag-line-mobile.svg");
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   height: 6px;
   display: block;
-  background-position: center;
-  left: 0;
-  right: 0;
+  width: 320px;
+  left: calc(50% - 160px);
   top: 0;
   position: absolute;
 }
@@ -39,12 +38,11 @@
   .about__title::before {
     content: "";
     background-image: url("../../img/zigzag-line-tablet.svg");
-    background-repeat: repeat-x;
     height: 17px;
     display: block;
     background-position: center;
-    left: 0;
-    right: 0;
+    width: 768px;
+    left: calc(50% - 384px);
     top: 0;
     position: absolute;
   }
