@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -28,22 +30,22 @@
         </div>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item site-list__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item site-list__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="main-nav__item user-list__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link user-list__link" href="#">
                 <svg class="main-nav__search-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#search" />
                 </svg>
                 <span class="main-nav__search">Поиск по сайту</span></a>
             </li>
             <li class="main-nav__item user-list__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link user-list__link" href="#">
                 <svg class="main-nav__basket-icon" width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#cart" />
                 </svg>
@@ -76,16 +78,16 @@
         <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="order-form__group order-form__group--no-background">
             <legend class="order-form__title">Тип</legend>
-            <ul class="order-form__list">
-              <li class="order-form__item">
-                <label class="order-form__control control">
+            <ul class="order-form__list order-form__list-radio">
+              <li class="order-form__item order-form__item-radio">
+                <label class="order-form__control order-form__control-radio control">
                   <input class="control__input visually-hidden" type="radio" name="type" value="interior" checked>
                   <span class="control__circle"></span>
                   Аксессуар для интерьера
                 </label>
               </li>
-              <li class="order-form__item">
-                <label class="order-form__control control">
+              <li class="order-form__item order-form__item-radio">
+                <label class="order-form__control order-form__control-radio control">
                   <input class="control__input visually-hidden" type="radio" name="type" value="toy">
                   <span class="control__circle"></span>
                   Детская игрушка
@@ -98,43 +100,43 @@
           <fieldset class="order-form__group">
             <legend class="order-form__title">Цвет</legend>
 
-                <ul class="order-form__list order-form__list--checkbox">
-                  <li class="order-form__item order-form__item--checkbox">
+                <ul class="order-form__list order-form__list-checkbox">
+                  <li class="order-form__item order-form__item-checkbox">
                     <label class="order-form__control control">
                       <input class="control__input visually-hidden" type="checkbox" name="white" checked>
                       <span class="control__mark"></span>
                       Белый
                     </label>
                   </li>
-                  <li class="order-form__item order-form__item--checkbox">
+                  <li class="order-form__item order-form__item-checkbox">
                   <label class="order-form__control control">
                     <input class="control__input visually-hidden" type="checkbox" name="gray" checked>
                     <span class="control__mark"></span>
                     Серый
                   </label>
                 </li>
-                <li class="order-form__item order-form__item--checkbox">
+                <li class="order-form__item order-form__item-checkbox">
                   <label class="order-form__control control">
                     <input class="control__input visually-hidden" type="checkbox" name="tiffany">
                     <span class="control__mark"></span>
                     Тиффани
                   </label>
                 </li>
-                <li class="order-form__item order-form__item--checkbox">
+                <li class="order-form__item order-form__item-checkbox">
                   <label class="order-form__control control">
                     <input class="control__input visually-hidden" type="checkbox" name="black">
                     <span class="control__mark"></span>
                     Черный
                   </label>
                 </li>
-                <li class="order-form__item order-form__item--checkbox">
+                <li class="order-form__item order-form__item-checkbox">
                   <label class="order-form__control control">
                     <input class="control__input visually-hidden" type="checkbox" name="pinc">
                     <span class="control__mark"></span>
                     Розовый
                   </label>
                 </li>
-                <li class="order-form__item order-form__item--checkbox">
+                <li class="order-form__item order-form__item-checkbox">
                   <label class="order-form__control control">
                     <input class="control__input visually-hidden" type="checkbox" name="orange">
                     <span class="control__mark"></span>
@@ -151,17 +153,17 @@
               <ul class="order-form__list order-form__list--name">
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">Имя:
-                    <input class="order-form__input" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+                    <input class="order-form__input order-form__input-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
                   </label>
                 </li>
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">
-              Фамилия:<input class="order-form__input" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+              Фамилия:<input class="order-form__input order-form__input-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
                   </label>
                 </li>
                 <li class="order-form__item order-form__item--name">
                   <label class="order-form__label">
-              Отчество:<input class="order-form__input" type="text" name="patronymic-name" placeholder="Отчество, если желаете">
+              Отчество:<input class="order-form__input order-form__input-name" type="text" name="patronymic-name" placeholder="Отчество, если желаете">
                   </label>
                 </li>
               </ul>

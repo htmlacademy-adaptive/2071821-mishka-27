@@ -2,7 +2,6 @@
   .site-list {
     flex-basis: 50%;
     order: 3;
-    border-top: solid 1px @gray-light;
   }
 }
 
@@ -13,6 +12,7 @@
     align-items: center;
     background-color: @white;
     position: relative;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -25,14 +25,21 @@
     width: calc(50vw - 525px);
     top: 0;
     right: 387px;
+    border-bottom: solid 1px #ececec;
   }
 }
 
 @media (min-width: @tablet-width) {
   .site-list__item {
     width: 167px;
-    padding-top: 22px;
+    padding-top: 20px;
     background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 17px;
   }
 }
 

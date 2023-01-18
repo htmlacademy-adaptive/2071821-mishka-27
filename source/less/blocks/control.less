@@ -4,10 +4,10 @@
 
 .control__circle {
   position: absolute;
-  bottom: -15px;
-  left: -58px;
-  width: 40px;
-  height: 40px;
+  top: -7px;
+  left: -60px;
+  width: 36px;
+  height: 36px;
   background-color: #ffffff;
   border-radius: 50%;
   border: solid 2px @gray;
@@ -15,9 +15,10 @@
 
 @media (min-width: @tablet-width) {
   .control__circle {
-    width: 50px;
-    height: 50px;
-    left: -80px;
+    width: 45px;
+    height: 45px;
+    left: -77px;
+    top: -16px;
   }
 }
 
@@ -40,7 +41,7 @@
   margin: auto;
   width: 23px;
   height: 16px;
-  background-image: url("../img/tick-tablet.svg");
+  background-image: url("../img/tick-mobile.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -49,24 +50,32 @@
   .control__input[type="checkbox"]:checked + .control__mark::before {
     width: 32px;
     height: 22px;
+    background-image: url("../img/tick-tablet.svg");
   }
 }
 
 .control__mark {
   position: absolute;
-  bottom: -13px;
-  left: -59px;
-  width: 38px;
-  height: 38px;
+  bottom: -6px;
+  left: -60px;
+  width: 34px;
+  height: 34px;
   background-color: #ffffff;
   border: solid 2px @gray;
 }
 
 @media (min-width: @tablet-width) {
   .control__mark {
-    width: 52px;
-    height: 52px;
-    left: -82px;
+    width: 48px;
+    height: 48px;
+    left: -80px;
+    bottom: -14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control__mark {
+    bottom: -12px;
   }
 }
 

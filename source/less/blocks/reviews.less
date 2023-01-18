@@ -1,3 +1,10 @@
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding-top: 91px;
+    padding-bottom: 69px;
+  }
+}
+
 .reviews__wrapper {
   padding-top: 58px;
   padding-bottom: 45px;
@@ -12,9 +19,10 @@
     background-size: contain;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 79px;
+    padding-top: 82px;
     padding-bottom: 0;
     margin-bottom: 68px;
+    align-items: start;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-tablet@2x.jpg");
@@ -27,8 +35,9 @@
   .reviews__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 83px;
+    padding-top: 78px;
     background-position: bottom 0 left 50px;
+    margin: 0 auto;
   }
 }
 
@@ -38,15 +47,15 @@
 
 @media (min-width: @tablet-width) {
   .reviews__list {
-    padding-bottom: 47px;
     order: 3;
     position: relative;
+    padding-bottom: 48px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .reviews__list {
-    padding-bottom: 96px;
+    padding-bottom: 95px;
   }
 }
 
@@ -72,6 +81,7 @@
     font-size: 53px;
     line-height: 57px;
     padding-left: 174px;
+    padding-top: 0;
   }
 }
 
@@ -88,6 +98,7 @@
 @media (min-width: @desktop-width) {
   .reviews__item {
     padding-left: 174px;
+    padding-top: 35px;
   }
 }
 
@@ -103,12 +114,14 @@
 @media (min-width: @tablet-width) {
   .reviews__text {
     font-size: 17px;
+    margin-bottom: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__text {
     width: 814px;
+    margin-bottom: 43px;
   }
 }
 
@@ -127,12 +140,20 @@
   font-size: 17px;
   line-height: 27px;
   text-align: left;
+  font-style: normal;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__author-name {
     width: 100%;
     display: block;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__author-name {
+    font-size: 17px;
   }
 }
 
@@ -147,7 +168,7 @@
 .reviews__button-forward {
   background-color: @white;
   border: none;
-  padding: 13px 0;
+  padding: 11px 0;
   cursor: pointer;
 }
 
@@ -181,12 +202,15 @@
 
 .reviews__write {
   width: 100%;
+  padding: 14px 50px;
 }
 
 @media (min-width: @tablet-width) {
   .reviews__write {
-    width: 209px;
+    width: 175px;
     margin-left: auto;
+    padding: 15px 39px;
+    font-size: 17px;
   }
 }
 
@@ -220,8 +244,15 @@
     width: 137px;
     margin: 0;
     position: absolute;
-    bottom: 124px;
+    bottom: 61px;
     right: 19px;
     height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__button-wrapper {
+    bottom: 109px;
+    right: 19px;
   }
 }

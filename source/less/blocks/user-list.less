@@ -6,6 +6,7 @@
     justify-content: flex-end;
     background-color: @white;
     position: relative;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -15,6 +16,7 @@
     flex-basis: auto;
     align-items: center;
     position: relative;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -27,6 +29,7 @@
     width: calc(50vw - 334px);
     top: 0;
     left: 347px;
+    border-bottom: solid 1px #ececec;
   }
 }
 
@@ -46,8 +49,14 @@
 @media (min-width: @tablet-width) {
   .user-list__item:first-child {
     min-width: 82px;
-    min-height: 88px;
+    min-height: 87px;
     border-left: solid 1px @gray-light;
     border-right: solid 1px @gray-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-list__link {
+    font-size: 17px;
   }
 }
