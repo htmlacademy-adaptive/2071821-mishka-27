@@ -4,8 +4,9 @@
 
 .control__circle {
   position: absolute;
-  top: -7px;
-  left: -60px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 36px;
   height: 36px;
   background-color: #ffffff;
@@ -17,8 +18,9 @@
   .control__circle {
     width: 45px;
     height: 45px;
-    left: -77px;
-    top: -16px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -54,10 +56,19 @@
   }
 }
 
+.control__input[type="checkbox"]:focus-visible + .control__mark {
+  outline: 2px solid #62d1ba;
+}
+
+.control__input[type="radio"]:focus-visible + .control__circle {
+  outline: 2px solid #62d1ba;
+}
+
 .control__mark {
   position: absolute;
-  bottom: -6px;
-  left: -60px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 34px;
   height: 34px;
   background-color: #ffffff;
@@ -68,14 +79,9 @@
   .control__mark {
     width: 48px;
     height: 48px;
-    left: -80px;
-    bottom: -14px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .control__mark {
-    bottom: -12px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
